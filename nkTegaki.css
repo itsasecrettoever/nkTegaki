@@ -1,0 +1,225 @@
+.nktcontainer
+{
+	border: 1px solid #808080;
+}
+.nktcontrol
+{
+	position: relative;
+	background-color: #808080;
+}
+.toolmenu
+{
+	position: relative;
+}
+.tool:first-child
+{
+	margin-left: 1px;
+}
+.tool
+{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url('tegaki.ui.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	margin: 2px;
+}
+.tool:hover
+{
+	background-color: #c0c0c0;
+}
+.brush
+{
+	background-position: 0 0;
+}
+.eraser
+{
+	background-position: -32px 0;
+}
+.marquee
+{
+	display: none;
+	background-position: -128px 0;
+}
+.lasso
+{
+	display: none;
+	background-position: -160px 0;
+}
+.wand
+{
+	display: none;
+	background-position: -192px 0;
+}
+.move
+{
+	display: none;
+	background-position: -96px 0;
+}
+.fill
+{
+	display: none;
+	background-position: -256px 0;
+}
+.gradient
+{
+	display: none;
+	background-position: -288px 0;
+}
+.jumble
+{
+	display: none;
+	background-position: -320px 0;
+}
+.flip
+{
+	background-position: -352px 0;
+}
+.flip.flipped
+{
+	background-color: #c0c0c0;
+}
+.undo
+{
+	background-position: -384px 0;
+}
+.redo
+{
+	background-position: -416px 0;
+}
+.save
+{
+	background-position: -448px 0;
+}
+.save:hover
+{
+	background-color: #00c0ff;
+}
+.clear
+{
+	background-position: -480px 0;
+}
+.clear:hover
+{
+	background-color: #ff0000;
+}
+.tool:active, .tool.active,
+.save:active, .save.active, .clear:active, .clear.active
+{
+	background-color: #ffffff;
+}
+.sizemenu
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	margin-right: 4px;
+}
+.sizemenu .sizecount
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;
+	display: inline-block;
+	color: #000000;
+	width: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+.sizemenu input
+{
+	width: 64px;
+	margin: 2px;
+	vertical-align: middle;
+}
+.sizemenu button
+{
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	line-height: 10px;
+	vertical-align: middle;
+	border-radius: 4px;
+	margin-left: 2px;
+}
+.sizemenu button + button
+{
+	margin-left: 4px;
+}
+.tonemenu
+{
+	display: inline-block;
+}
+.tone
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #808080;
+	background-color: #ffffff;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	margin: 2px;
+	vertical-align: middle;
+}
+.tone:hover
+{
+	border-color: #ffffff;
+}
+.tone:active
+{
+	background-image: none!important;
+	background-color: #ffffff;
+}
+.tone.selected
+{
+	margin: 1px;
+	width: 20px;
+	height: 20px;
+}
+.tool.selected, .tone.selected
+{
+	cursor: default;
+	border-color: #ffffff;
+}
+.nktworkspace
+{
+   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	display: block;
+	background-color: #ffffff;
+	background-image: url('tegaki.bg.png');
+	text-align: center;
+}
+.drawcanvaswrap
+{
+	display: inline-block;
+	background-color: #ffffff;
+	position: relative;
+	margin: 32px;
+}
+.overlay, .drawcanvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.overlay
+{
+	z-index: 2;
+}
+.drawcanvas
+{
+	z-index: 1;
+}

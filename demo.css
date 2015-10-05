@@ -1,0 +1,74 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+#tegakitriggers
+{
+	text-align: center;
+	margin-bottom: 1px;
+	background-color: #ffffff;
+}
+#tegakitriggers a
+{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	color: #404040;
+	margin: 8px;
+}
+#tegakitriggers a:hover
+{
+	color: #000000;
+}
+/**/
+.tegakiimage
+{
+	display: inline-block;
+	margin: 4px;
+	position: relative;
+	left: -44px;
+	vertical-align: top;
+}
+.tegakiimage a
+{
+	border: 1px solid #000000;
+	border-radius: 4px;
+	display: inline-block;
+	overflow: hidden;
+}
+.tegakipost
+{
+	margin: 0 56px;
+	white-space: nowrap;
+}
+.tegakipost .avatar
+{
+	position: relative;
+	left: -44px;
+}
+.tegakiretouch, .tegakirem
+{
+	position: absolute;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('tegakiaction.png');
+	right: -36px;
+	cursor: pointer;
+}
+.tegakipost:hover .tegakiretouch, .tegakipost:hover .tegakirem
+{
+	display: inline-block;
+}
+.tegakiretouch
+{
+	top: 0;
+	background-position: 0 0;
+}
+.tegakirem
+{
+	top: 32px;
+	background-position: 32px 0;
+}
