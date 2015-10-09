@@ -858,7 +858,7 @@ function nkTegaki(conf)
 			$(tegaki.tonemenu).append($(tegaki.control.tone[toneid]).addClass('tone').data('id', toneid));
 			$(tegaki.control.tone[toneid]).on('click', function()
 			{
-				tegaki.changetone($(tegaki).data('id'));
+				tegaki.changetone($(this).data('id'));
 			});
 		}
 		tegaki.rendertones();
