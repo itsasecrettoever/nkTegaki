@@ -714,8 +714,8 @@ function nkTegaki(conf)
 			for (var x = 0; x < w; x++)
 			{
 				// RGB
-				var i = (((y - 1) * w) + x)*4;
-				var flip = (((y - 1) * w) + (w - x - 1))*4;
+				var i = ((y * w) + x)*4;
+				var flip = ((y * w) + (w - x - 1))*4;
 				for (var c = 0; c < 4; c++)
 				{
 						outputData[(i + c)] = inputData[(flip + c)];
